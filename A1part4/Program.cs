@@ -20,6 +20,27 @@ namespace A1part4
     {
         static void Main(string[] args)
         {
+            string prompt;
+            double currentFlowing;
+            double resistanceInWire;
+            double potentialDifference;
+
+            Console.WriteLine("Please enter the current flowing: ");
+            prompt = Console.ReadLine();
+            currentFlowing = Convert.ToDouble(prompt);
+
+
+            Console.WriteLine("Please enter the resistance of the wire: ");
+            prompt = Console.ReadLine();
+            resistanceInWire = Convert.ToDouble(prompt);
+
+            potentialDifference = currentFlowing*resistanceInWire;
+            Console.Write($"Potential Difference is: {potentialDifference}");
+
+            Console.WriteLine("\nPress a key to exit");
+            Console.ReadKey();
+
+
         }
     }
 }

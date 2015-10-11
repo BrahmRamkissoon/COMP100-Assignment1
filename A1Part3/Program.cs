@@ -21,7 +21,7 @@ namespace A1Part3
         {
             string prompt;
             double radius;
-            double PI = 3.14d;
+            const double PI = 3.14d;
             double area;
 
             Console.WriteLine("++++Area of Circle calculator++++");

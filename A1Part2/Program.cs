@@ -20,21 +20,14 @@ namespace A1Part2
     {
         static void Main(string[] args)
         {
-            int prompt;
+            string prompt;
             bool answer;
             
-            Console.WriteLine("Is the sky blue?");
-            Console.WriteLine("1. True");
-            Console.WriteLine("2. False");
-            prompt = Convert.ToInt32(Console.ReadLine());
-            if (prompt == 1)
-            {
-                answer = true;
-            }
-            else
-            {
-                answer = false;
-            }
+            Console.Write("Is the sky blue? (True or False): ");
+            prompt = Console.ReadLine();
+
+            answer = Convert.ToBoolean(prompt);
+
             Console.WriteLine($"Is the sky blue? {answer}");
 
             Console.WriteLine("\nPress a key to exit");
